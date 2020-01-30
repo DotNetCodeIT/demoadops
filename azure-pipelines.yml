@@ -19,7 +19,7 @@ stages:
   jobs:
   - job: Build
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'windows-2019'
     continueOnError: true    
     steps:
     - task: NuGetToolInstaller@1
