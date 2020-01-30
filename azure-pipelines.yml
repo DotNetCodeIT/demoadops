@@ -15,7 +15,7 @@ variables:
   buildConfiguration: 'Release'
 
 stages:
-- stage: Build senza docker
+- stage: Build
   jobs:
   - job: Build
     pool:
@@ -36,7 +36,7 @@ stages:
       inputs:
         platform: '$(buildPlatform)'
         configuration: '$(buildConfiguration)'
-- stage: Build con docker
+- stage: DockerBuild
   jobs:
   - job: Build
     pool:
